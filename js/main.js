@@ -1,3 +1,7 @@
+AOS.init({
+	once: false,
+    duration: 700
+});
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.addreview__form');
 
@@ -27,10 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
             input.classList.remove('error');
         });
     });
-
-
-
-
 
     const reviewSlider = document.querySelector('.review__slider');
     const reviewSlides = document.querySelectorAll('.review__slide');
@@ -103,4 +103,91 @@ function checkScroll() {
 window.addEventListener('scroll', checkScroll);
 checkScroll();
 
+document.addEventListener('mousemove', (e) => {
+    const images = [
+        { selector: '.hero__image img', speed: 30, follow: true },
+        { selector: '.about__image img', speed: 50, follow: false }
+    ];
+    images.forEach(({ selector, speed, follow }) => {
+        const image = document.querySelector(selector);
+        if (!image) return;
 
+        const rect = image.parentElement.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left - rect.width / 2;
+        const mouseY = e.clientY - rect.top - rect.height / 2;
+        const direction = follow ? 1 : -1;
+
+        const moveX = (mouseX / rect.width) * speed * direction;
+        const moveY = (mouseY / rect.height) * speed * direction;
+
+        image.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const workBlock = document.querySelector('.work__block');
+    let isDragging = false;
+    let startX, startY;
+    let scrollLeft;
+    let translateX = 0;
+    let isHorizontalScroll = false;
+
+    const getBoundedTranslate = (translateX) => {
+        const maxTranslate = 0;
+        const totalWidth = workBlock.scrollWidth - workBlock.clientWidth;
+        const minTranslate = -totalWidth;
+        return Math.min(maxTranslate, Math.max(minTranslate, translateX));
+    };
+
+    const updateTransform = (newTranslateX) => {
+        translateX = getBoundedTranslate(newTranslateX);
+        workBlock.style.transform = `translateX(${translateX}px)`;
+    };
+
+    workBlock.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX;
+        scrollLeft = translateX;
+        workBlock.style.cursor = 'grabbing';
+    });
+
+    workBlock.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].pageX;
+        startY = e.touches[0].pageY;
+        scrollLeft = translateX;
+        isHorizontalScroll = false;
+    });
+
+    workBlock.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX;
+        const walk = x - startX;
+        updateTransform(scrollLeft + walk);
+    });
+
+    workBlock.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const x = e.touches[0].pageX;
+        const y = e.touches[0].pageY;
+        const deltaX = Math.abs(x - startX);
+        const deltaY = Math.abs(y - startY);
+
+        if (deltaX > deltaY) {
+            isHorizontalScroll = true;
+            e.preventDefault();
+            updateTransform(scrollLeft + (x - startX));
+        }
+    });
+
+    const stopDragging = () => {
+        isDragging = false;
+        workBlock.style.cursor = 'grab';
+    };
+
+    workBlock.addEventListener('mouseup', stopDragging);
+    workBlock.addEventListener('mouseleave', stopDragging);
+    workBlock.addEventListener('touchend', stopDragging);
+    workBlock.style.cursor = 'grab';
+});

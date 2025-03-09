@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -94,7 +95,7 @@
         <section class="hero">
             <div class="hero__top">
                 <div class="container">
-                    <div class="hero__top-logo">
+                    <div class="hero__top-logo" data-aos="fade-up" data-aos-delay="0">
                         <div class="hero__logo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="731" height="235" viewBox="0 0 731 235" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M726.262 0.474844C729.762 5.87484 722.422 9.16484 713.672 13.0848C707.822 15.7048 701.352 18.6048 697.052 22.5948C686.322 32.5848 693.042 60.3548 693.492 53.2848C699.632 35.3448 724.572 41.8248 728.182 21.5348C730.792 7.47484 730.402 1.66484 726.262 0.464844V0.474844ZM96.8423 63.1248C81.6123 63.0948 68.0223 67.8648 56.9723 77.4148V66.9448H22.6523V102.795C16.2423 107.315 9.34227 112.165 4.73227 117.485C-7.84773 131.995 8.76227 167.415 7.63227 158.135C8.72227 148.565 13.8523 143.535 22.6623 137.505V227.795H60.3823V128.265C60.2923 110.745 69.9623 97.4748 87.5123 97.4548C105.862 97.7348 114.412 110.535 114.502 129.115L114.352 227.795H151.932L152.062 134.765H152.082C151.792 126.975 152.362 116.285 155.822 110.975C163.662 95.2548 187.752 92.9548 198.642 105.505C203.422 110.685 206.072 118.185 206.072 128.545C206.072 128.545 205.922 227.785 205.922 227.795H243.502L243.652 121.475C244.142 87.4648 222.562 62.4248 187.712 63.1348C169.562 63.0648 152.592 70.4548 141.492 84.3848C131.222 69.8848 115.432 63.0848 96.8623 63.1348L96.8423 63.1248ZM596.982 129.355C575.062 133.505 549.972 139.735 540.082 161.225C529.752 183.465 537.492 213.705 560.602 225.195C583.272 236.375 622.752 235.165 637.802 212.615V228.205L674.662 227.625C674.412 214.165 675.442 124.595 673.802 113.465C673.242 107.965 671.972 100.125 669.222 94.5448C657.832 72.6548 632.252 66.2348 608.162 65.7948C572.212 65.7248 543.792 82.9848 540.702 120.835H576.502C578.862 112.565 582.232 103.815 587.852 101.155C601.092 92.9848 634.052 92.7848 635.862 110.035C635.832 112.015 636.072 113.015 635.072 114.585C633.782 116.845 628.462 120.125 625.882 121.255C618.472 123.955 604.622 127.405 596.982 129.365V129.355ZM530.152 67.0148C511.542 63.7348 490.342 68.8348 477.242 83.0648V66.9448H442.922V227.785H480.782C481.382 215.455 479.142 140.705 482.522 130.405C487.512 105.655 510.972 96.1448 533.422 103.875V67.6148L530.142 67.0148H530.152ZM343.572 66.7848C273.602 65.2548 241.022 135.875 269.802 194.075C297.002 248.555 390.062 248.545 417.492 194.355C446.132 136.255 413.992 64.9748 343.572 66.7848ZM730.282 67.1448H692.702V227.985H730.282V67.1448ZM317.142 105.035C332.882 94.2748 368.162 96.9048 378.772 112.365C394.492 129.205 394.462 171.455 378.872 188.845C366.122 207.605 321.942 207.815 308.672 189.065C291.192 168.465 291.342 120.935 317.132 105.035H317.142ZM625.122 148.325C630.522 145.865 634.172 143.975 637.492 141.415C637.722 147.585 637.602 151.455 637.212 159.265C636.752 169.745 636.032 178.485 629.502 186.905C621.602 197.515 611.042 202.385 596.892 202.335C592.462 202.335 588.462 200.405 584.552 198.455C582.222 197.405 580.892 196.565 579.402 194.125C574.912 189.005 573.442 180.355 576.032 173.515C580.222 157.955 611.192 153.435 625.102 148.325H625.122Z" fill="#10223A"/>
@@ -105,37 +106,37 @@
                     <div class="hero__content">
                         <nav class="header__menu hero__content-menu">
                             <ul>
-                                <li class="header__link">
+                                <li class="header__link" data-aos="fade-up" data-aos-delay="50">
                                     <a class="hover-animate" href="#">
                                         <span>ABOUT</span>
                                         <span>ABOUT</span>
                                     </a>
                                 </li>
-                                <li class="header__link">
+                                <li class="header__link" data-aos="fade-up" data-aos-delay="100">
                                     <a class="hover-animate" href="#">
                                         <span>HOW IT WORKS</span>
                                         <span>HOW IT WORKS</span>
                                     </a>
                                 </li>
-                                <li class="header__link">
+                                <li class="header__link" data-aos="fade-up" data-aos-delay="150">
                                     <a class="hover-animate" href="#">
                                         <span>PRICING</span>
                                         <span>PRICING</span>
                                     </a>
                                 </li>
-                                <li class="header__link">
+                                <li class="header__link" data-aos="fade-up" data-aos-delay="200">
                                     <a class="hover-animate" href="#">
                                         <span>BLOG</span>
                                         <span>BLOG</span>
                                     </a>
                                 </li>
-                                <li class="header__link">
+                                <li class="header__link" data-aos="fade-up" data-aos-delay="250">
                                     <a class="hover-animate" href="#">
                                         <span>CONTACTS</span>
                                         <span>CONTACTS</span>
                                     </a>
                                 </li>
-                                <li class="header__link">
+                                <li class="header__link" data-aos="fade-up" data-aos-delay="300">
                                     <div class="header__lang">
                                         <p class="header__lang-selected">En</p>
                                         <div class="header__lang-content">
@@ -146,8 +147,8 @@
                             </ul>
                         </nav>
                         <div class="hero__content-bottom">
-                            <h1 class="hero__title">AI-powered legal Assistant Saves time, reduces human error, & improves legal accuracy. </h1>
-                            <a class="hero__btn btn">Live AI Chatbot 2025</a>
+                            <h1 class="hero__title" data-aos="fade-up" data-aos-delay="350">AI-powered legal Assistant Saves time, reduces human error, & improves legal accuracy. </h1>
+                            <a class="hero__btn btn" data-aos="fade-up" data-aos-delay="400">Live AI Chatbot 2025</a>
                         </div>
                     </div>
                 </div>
@@ -155,10 +156,10 @@
             <div class="hero__bottom">
                 <div class="container">
                     <div class="hero__inner">
-                        <div class="hero__image">
+                        <div class="hero__image" data-aos="fade-up" data-aos-delay="350">
                             <img src="img/hero.svg" alt="">
                         </div>
-                        <p class="hero__bottom-trusted">Trusted by <strong>hundreds</strong> of users around the world
+                        <p class="hero__bottom-trusted" data-aos="fade-up" data-aos-delay="400">Trusted by <strong>hundreds</strong> of users around the world
                             <span class="hero__bottom-trusted--icons">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                                     <path d="M8 0.474609L9.79611 6.00247H15.6085L10.9062 9.41888L12.7023 14.9467L8 11.5303L3.29772 14.9467L5.09383 9.41888L0.391548 6.00247H6.20389L8 0.474609Z" fill="#091423"/>
@@ -179,10 +180,10 @@
                         </p>
     
                         <div class="hero__socials">
-                            <a class="hero__socials-item" href="#" target="_blank">Facebook</a>
-                            <a class="hero__socials-item" href="#" target="_blank">X</a>
-                            <a class="hero__socials-item" href="#" target="_blank">Telegram</a>
-                            <a class="hero__socials-item" href="#" target="_blank">Linkedin</a>
+                            <a class="hero__socials-item" href="#" target="_blank" data-aos="fade-left" data-aos-delay="150">Facebook</a>
+                            <a class="hero__socials-item" href="#" target="_blank" data-aos="fade-left" data-aos-delay="100">X</a>
+                            <a class="hero__socials-item" href="#" target="_blank" data-aos="fade-left" data-aos-delay="50">Telegram</a>
+                            <a class="hero__socials-item" href="#" target="_blank" data-aos="fade-left" data-aos-delay="0">Linkedin</a>
                         </div>
                     </div>
                 </div>
@@ -193,17 +194,17 @@
             <div class="container">
                 <div class="about__inner">
                     <div class="about__content">
-                        <h2 class="about__title title">ABOUT</h2>
-                        <div class="about__content-block">
+                        <h2 class="about__title title" data-aos="fade-up" data-aos-delay="0">ABOUT</h2>
+                        <div class="about__content-block" data-aos="fade-up" data-aos-delay="50">
                             <p class="about__descr">MoraiAI provides 24/7 instant access to legal guidance, helping to navigate legal matters.</p>
                             <br>
                             <p class="about__descr">Whether you need business compliance insights, create contract, or seeking everyday legal support, MoraiAI delivers fast AI-powered assistance.</p>
                             <br>
                             <p class="about__name">Your legal assistant is always one click away.</p>
-                            <a class="about__btn btn" href="#">Live AI Chatbot</a>
+                            <a class="about__btn btn" href="#" data-aos="fade-up" data-aos-delay="100">Live AI Chatbot</a>
                         </div>
                     </div>
-                    <div class="about__image">
+                    <div class="about__image" data-aos="fade-up" data-aos-delay="150">
                         <img src="img/about.png" alt="">
                     </div>
                 </div>
@@ -213,7 +214,7 @@
         <section class="works">
             <div class="container">
                 <div class="works__inner">
-                    <span class="works__title">   
+                    <span class="works__title" data-aos="fade-up" data-aos-delay="0">   
                         <span class="works__title-num">( 02 )</span>  
                         <svg width="1167" height="150" viewBox="0 0 1167 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21.7527 25.093C28.3819 20.0079 33.9426 15.7409 29.8904 11.8552L29.8884 11.8468C33.6389 12.0359 35.1373 16.8936 35.7508 29.3617C36.7688 47.323 14.3255 46.8196 12.7266 63.2919C13.7661 69.3884 2.48821 47.1442 9.57581 36.5053C12.4188 32.2532 17.3204 28.492 21.7527 25.093Z" fill="#10223A"/>
@@ -238,10 +239,10 @@
                     <div class="container">
                         <div class="works__item-content">
                             <div class="works__item-block">
-                                <h3 class="works__item-title">Legal Advice</h3>
-                                <p class="works__item-descr">Offering preliminary guidance on various legal matters. It helps users understand laws, regulations, and potential risks before consulting a lawyer..</p>
+                                <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Legal Advice</h3>
+                                <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Offering preliminary guidance on various legal matters. It helps users understand laws, regulations, and potential risks before consulting a lawyer..</p>
                             </div>
-                            <div class="works__item-image">
+                            <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                 <img src="img/works/1.jpg" alt="">
                             </div>
                         </div>                        
@@ -251,10 +252,10 @@
                     <div class="container">
                         <div class="works__item-content">
                             <div class="works__item-block">
-                                <h3 class="works__item-title">Contract <br>Drafting & Review</h3>
-                                <p class="works__item-descr">Generate agreements, detect risks, and ensure compliance. It helps users create, analyze, and refine contracts efficiently..</p>
+                                <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Contract <br>Drafting & Review</h3>
+                                <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Generate agreements, detect risks, and ensure compliance. It helps users create, analyze, and refine contracts efficiently..</p>
                             </div>
-                            <div class="works__item-image">
+                            <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                 <img src="img/works/2.jpg" alt="">
                             </div>
                         </div>                        
@@ -264,10 +265,10 @@
                     <div class="container">
                         <div class="works__item-content">
                             <div class="works__item-block">
-                                <h3 class="works__item-title">Legal Policies Management</h3>
-                                <p class="works__item-descr">AI-generated and customized legal policies. <br>Compliance checks for GDPR, CCPA, and other regulations. <br>Automatic updates based on legal changes.</p>
+                                <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Legal Policies Management</h3>
+                                <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">AI-generated and customized legal policies. <br>Compliance checks for GDPR, CCPA, and other regulations. <br>Automatic updates based on legal changes.</p>
                             </div>
-                            <div class="works__item-image">
+                            <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                 <img src="img/works/3.jpg" alt="">
                             </div>
                         </div>                        
@@ -277,10 +278,10 @@
                     <div class="container">
                         <div class="works__item-content">
                             <div class="works__item-block">
-                                <h3 class="works__item-title">Live AI Chatbot for Instant Legal Assistance</h3>
-                                <p class="works__item-descr">	Conversational AI assistant that provides quick legal guidance on any issue. <br>Available 24/7 for rapid legal support.</p>
+                                <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Live AI Chatbot for Instant Legal Assistance</h3>
+                                <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">	Conversational AI assistant that provides quick legal guidance on any issue. <br>Available 24/7 for rapid legal support.</p>
                             </div>
-                            <div class="works__item-image">
+                            <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                 <img src="img/works/4.jpg" alt="">
                             </div>
                         </div>                        
@@ -290,10 +291,10 @@
                     <div class="container">
                         <div class="works__item-content">
                             <div class="works__item-block">
-                                <h3 class="works__item-title">Document Review and Analysis</h3>
-                                <p class="works__item-descr">Contract clause recommendations,  error detection <br>(inconsistencies, missing clauses, ambiguous wording).</p>
+                                <h3 class="works__item-title" data-aos="fade-right" data-aos-delay="0">Document Review and Analysis</h3>
+                                <p class="works__item-descr" data-aos="fade-right" data-aos-delay="50">Contract clause recommendations,  error detection <br>(inconsistencies, missing clauses, ambiguous wording).</p>
                             </div>
-                            <div class="works__item-image">
+                            <div class="works__item-image" data-aos="fade-left" data-aos-delay="100">
                                 <img src="img/works/5.jpg" alt="">
                             </div>
                         </div>                        
@@ -305,108 +306,110 @@
         <section class="work">
             <div class="container">
                 <div class="work__inner">
-                    <span class="work-icon">
+                    <span class="work-icon" data-aos="zoom-in" data-aos-delay="0">
                         <img src="img/icon.svg" alt="">
                     </span>
-                    <h2 class="work__title title">Work</h2>
-                    <p class="work__descr">Get an assistance and quick consultancy you need on any legal issue in a real time from our  <a href="#">Morai AI</a>. This guide is detailed and it takes minutes to get AI-powered assistance.</p>
-                    <div class="work__block">
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <p class="work__item-step">
-                                    Step 1
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                            <path d="M14.1116 27.4746H13.8884C13.794 24.4006 13.7061 22.0877 13.431 20.3164C13.1505 18.5092 12.6778 17.3557 11.8983 16.5763C11.1189 15.7969 9.96546 15.3241 8.15819 15.0436C6.38692 14.7685 4.07398 14.6806 1 14.5862V14.363C4.07398 14.2687 6.38692 14.1807 8.15819 13.9056C9.96546 13.6251 11.1189 13.1524 11.8983 12.3729C12.6778 11.5935 13.1505 10.4401 13.431 8.6328C13.7059 6.86153 13.794 4.54858 13.8884 1.47461H14.1116C14.206 4.54858 14.2939 6.86153 14.569 8.6328C14.8495 10.4401 15.3222 11.5935 16.1017 12.3729C16.8811 13.1524 18.0345 13.6251 19.8418 13.9056C21.6131 14.1805 23.926 14.2687 27 14.363V14.5862C23.926 14.6806 21.6131 14.7685 19.8418 15.0436C18.0345 15.3241 16.8811 15.7969 16.1017 16.5763C15.3222 17.3557 14.8495 18.5092 14.569 20.3164C14.2939 22.0877 14.206 24.4006 14.1116 27.4746ZM4.11109 14.4749C5.72385 14.5486 7.06535 14.6482 8.1928 14.8232C10.0497 15.1115 11.2414 15.6035 12.0565 16.4186C12.8717 17.2338 13.3637 18.4252 13.652 20.2824C13.827 21.4098 13.9269 22.7513 14.0003 24.3641C14.074 22.7513 14.1736 21.4098 14.3486 20.2824C14.6368 18.4254 15.1288 17.2338 15.944 16.4186C16.7592 15.6035 17.9505 15.1115 19.8078 14.8232C20.9352 14.6482 22.2767 14.5483 23.8895 14.4749C22.2767 14.4012 20.9352 14.3016 19.8078 14.1266C17.9508 13.8383 16.7592 13.3463 15.944 12.5312C15.1288 11.716 14.6368 10.5246 14.3486 8.6674C14.1736 7.53995 14.0737 6.19846 14.0003 4.5857C13.9266 6.19846 13.827 7.53995 13.652 8.6674C13.3637 10.5243 12.8717 11.716 12.0565 12.5312C11.2414 13.3463 10.05 13.8383 8.1928 14.1266C7.06535 14.3016 5.72385 14.4015 4.11109 14.4749Z" fill="white" stroke="white"/>
-                                        </svg>
-                                    </span>
-                                </p>
-                                <div class="work__item-block">
-                                    <h3 class="work__item-title">Save</h3>
-                                    <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
-                                </div>   
+                    <h2 class="work__title title" data-aos="fade-right" data-aos-delay="0">Work</h2>
+                    <p class="work__descr" data-aos="fade-up" data-aos-delay="50">Get an assistance and quick consultancy you need on any legal issue in a real time from our  <a href="#">Morai AI</a>. This guide is detailed and it takes minutes to get AI-powered assistance.</p>
+                    <div class="work__content" data-aos="fade-up" data-aos-delay="0">
+                        <div class="work__block">
+                            <div class="work__item">
+                                <div class="work__item-top">
+                                    <p class="work__item-step">
+                                        Step 1
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                                <path d="M14.1116 27.4746H13.8884C13.794 24.4006 13.7061 22.0877 13.431 20.3164C13.1505 18.5092 12.6778 17.3557 11.8983 16.5763C11.1189 15.7969 9.96546 15.3241 8.15819 15.0436C6.38692 14.7685 4.07398 14.6806 1 14.5862V14.363C4.07398 14.2687 6.38692 14.1807 8.15819 13.9056C9.96546 13.6251 11.1189 13.1524 11.8983 12.3729C12.6778 11.5935 13.1505 10.4401 13.431 8.6328C13.7059 6.86153 13.794 4.54858 13.8884 1.47461H14.1116C14.206 4.54858 14.2939 6.86153 14.569 8.6328C14.8495 10.4401 15.3222 11.5935 16.1017 12.3729C16.8811 13.1524 18.0345 13.6251 19.8418 13.9056C21.6131 14.1805 23.926 14.2687 27 14.363V14.5862C23.926 14.6806 21.6131 14.7685 19.8418 15.0436C18.0345 15.3241 16.8811 15.7969 16.1017 16.5763C15.3222 17.3557 14.8495 18.5092 14.569 20.3164C14.2939 22.0877 14.206 24.4006 14.1116 27.4746ZM4.11109 14.4749C5.72385 14.5486 7.06535 14.6482 8.1928 14.8232C10.0497 15.1115 11.2414 15.6035 12.0565 16.4186C12.8717 17.2338 13.3637 18.4252 13.652 20.2824C13.827 21.4098 13.9269 22.7513 14.0003 24.3641C14.074 22.7513 14.1736 21.4098 14.3486 20.2824C14.6368 18.4254 15.1288 17.2338 15.944 16.4186C16.7592 15.6035 17.9505 15.1115 19.8078 14.8232C20.9352 14.6482 22.2767 14.5483 23.8895 14.4749C22.2767 14.4012 20.9352 14.3016 19.8078 14.1266C17.9508 13.8383 16.7592 13.3463 15.944 12.5312C15.1288 11.716 14.6368 10.5246 14.3486 8.6674C14.1736 7.53995 14.0737 6.19846 14.0003 4.5857C13.9266 6.19846 13.827 7.53995 13.652 8.6674C13.3637 10.5243 12.8717 11.716 12.0565 12.5312C11.2414 13.3463 10.05 13.8383 8.1928 14.1266C7.06535 14.3016 5.72385 14.4015 4.11109 14.4749Z" fill="white" stroke="white"/>
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>   
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
+                                </div>
                             </div>
-                            <div class="work__item-bottom">
-                                <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
+                            <div class="work__item">
+                                <div class="work__item-top">
+                                    <p class="work__item-step">
+                                        Step 2
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path d="M13.7938 14.0796L13.5715 13.9685C13.6283 13.8549 13.6836 13.7417 13.7369 13.6293L13.5727 13.7153C13.5625 13.6954 12.5282 11.7024 12.0153 9.23035C11.7133 7.77384 11.6478 6.4371 11.8207 5.25675C12.0383 3.77232 12.6353 2.53332 13.5951 1.57421L13.6947 1.47461L13.781 1.586C13.8201 1.63658 14.7427 2.84641 15.2127 5.00076C15.4884 6.26365 15.5483 7.58859 15.3909 8.93898C15.1944 10.6245 14.6574 12.3537 13.7941 14.0796H13.7938ZM13.6674 1.85503C11.685 3.94112 11.8021 6.97732 12.2572 9.17449C12.7212 11.4151 13.6196 13.257 13.7708 13.5577C15.4846 9.90616 15.3785 6.93853 14.9727 5.06685C14.5971 3.33512 13.9055 2.2069 13.6674 1.85503Z" fill="#CCE0EC" stroke="white"/>
+                                                <path d="M13.5309 26.5288L13.4312 26.4292C12.4717 25.4701 11.8748 24.2311 11.6569 22.7466C11.4836 21.5663 11.5491 20.2296 11.8515 18.7731C12.3643 16.3007 13.3986 14.308 13.4089 14.2881L13.5731 14.3741C13.5197 14.2617 13.4648 14.1485 13.4076 14.0349L13.6299 13.9238C14.4932 15.6497 15.0305 17.3792 15.2267 19.0644C15.3841 20.4148 15.3242 21.7401 15.0485 23.003C14.5786 25.1576 13.656 26.3671 13.6169 26.4177L13.5306 26.5291L13.5309 26.5288ZM13.6072 14.4457C13.4561 14.7461 12.5577 16.588 12.0936 18.8289C11.6385 21.0261 11.5215 24.062 13.5039 26.1484C13.742 25.7968 14.4336 24.6686 14.8092 22.9366C15.2152 21.0649 15.3214 18.0976 13.6072 14.4457Z" fill="#CCE0EC" stroke="white"/>
+                                                <path d="M20.1946 15.7598C19.7131 15.7598 19.2267 15.7313 18.7365 15.6742C17.0503 15.4778 15.32 14.941 13.5938 14.078L13.7049 13.8559C13.8185 13.9126 13.9318 13.9679 14.0442 14.0212L13.9582 13.8571C13.9781 13.8469 15.9719 12.813 18.445 12.3004C19.9022 11.9985 21.2395 11.933 22.4203 12.1058C23.9054 12.3233 25.1449 12.92 26.1044 13.8794L26.2041 13.979L26.0926 14.0653C26.042 14.1044 24.8317 15.0266 22.6764 15.4964C21.8712 15.672 21.0405 15.7598 20.1943 15.7598H20.1946ZM14.1162 14.0554C17.7693 15.7685 20.7381 15.6624 22.6106 15.2568C24.3431 14.8814 25.4718 14.19 25.8238 13.9521C23.7356 11.9693 20.6959 12.0875 18.496 12.5433C16.255 13.0078 14.4167 13.9043 14.1165 14.0554H14.1162Z" fill="#CCE0EC" stroke="white"/>
+                                                <path d="M7.0098 15.76C6.16358 15.76 5.33289 15.6722 4.52765 15.4966C2.37207 15.0268 1.16173 14.1046 1.11144 14.0655L1 13.9793L1.09964 13.8797C2.05916 12.9205 3.29869 12.3239 4.78375 12.106C5.9646 11.9329 7.30221 11.9984 8.75903 12.3006C11.2325 12.8132 13.226 13.8471 13.2459 13.8573L13.1599 14.0215C13.2723 13.9681 13.3856 13.9129 13.4992 13.8561L13.6103 14.0782C11.8838 14.9412 10.1535 15.4783 8.46754 15.6744C7.9777 15.7315 7.49095 15.76 7.00949 15.76H7.0098ZM1.38089 13.9523C1.7326 14.1903 2.8613 14.8816 4.59408 15.257C6.46656 15.6629 9.43513 15.769 13.0885 14.0556C12.788 13.9045 10.9453 13.0062 8.70347 12.5426C6.50536 12.0877 3.46818 11.9707 1.38089 13.9523Z" fill="#CCE0EC" stroke="white"/>
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>   
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <p class="work__item-step">
-                                    Step 2
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                                            <path d="M13.7938 14.0796L13.5715 13.9685C13.6283 13.8549 13.6836 13.7417 13.7369 13.6293L13.5727 13.7153C13.5625 13.6954 12.5282 11.7024 12.0153 9.23035C11.7133 7.77384 11.6478 6.4371 11.8207 5.25675C12.0383 3.77232 12.6353 2.53332 13.5951 1.57421L13.6947 1.47461L13.781 1.586C13.8201 1.63658 14.7427 2.84641 15.2127 5.00076C15.4884 6.26365 15.5483 7.58859 15.3909 8.93898C15.1944 10.6245 14.6574 12.3537 13.7941 14.0796H13.7938ZM13.6674 1.85503C11.685 3.94112 11.8021 6.97732 12.2572 9.17449C12.7212 11.4151 13.6196 13.257 13.7708 13.5577C15.4846 9.90616 15.3785 6.93853 14.9727 5.06685C14.5971 3.33512 13.9055 2.2069 13.6674 1.85503Z" fill="#CCE0EC" stroke="white"/>
-                                            <path d="M13.5309 26.5288L13.4312 26.4292C12.4717 25.4701 11.8748 24.2311 11.6569 22.7466C11.4836 21.5663 11.5491 20.2296 11.8515 18.7731C12.3643 16.3007 13.3986 14.308 13.4089 14.2881L13.5731 14.3741C13.5197 14.2617 13.4648 14.1485 13.4076 14.0349L13.6299 13.9238C14.4932 15.6497 15.0305 17.3792 15.2267 19.0644C15.3841 20.4148 15.3242 21.7401 15.0485 23.003C14.5786 25.1576 13.656 26.3671 13.6169 26.4177L13.5306 26.5291L13.5309 26.5288ZM13.6072 14.4457C13.4561 14.7461 12.5577 16.588 12.0936 18.8289C11.6385 21.0261 11.5215 24.062 13.5039 26.1484C13.742 25.7968 14.4336 24.6686 14.8092 22.9366C15.2152 21.0649 15.3214 18.0976 13.6072 14.4457Z" fill="#CCE0EC" stroke="white"/>
-                                            <path d="M20.1946 15.7598C19.7131 15.7598 19.2267 15.7313 18.7365 15.6742C17.0503 15.4778 15.32 14.941 13.5938 14.078L13.7049 13.8559C13.8185 13.9126 13.9318 13.9679 14.0442 14.0212L13.9582 13.8571C13.9781 13.8469 15.9719 12.813 18.445 12.3004C19.9022 11.9985 21.2395 11.933 22.4203 12.1058C23.9054 12.3233 25.1449 12.92 26.1044 13.8794L26.2041 13.979L26.0926 14.0653C26.042 14.1044 24.8317 15.0266 22.6764 15.4964C21.8712 15.672 21.0405 15.7598 20.1943 15.7598H20.1946ZM14.1162 14.0554C17.7693 15.7685 20.7381 15.6624 22.6106 15.2568C24.3431 14.8814 25.4718 14.19 25.8238 13.9521C23.7356 11.9693 20.6959 12.0875 18.496 12.5433C16.255 13.0078 14.4167 13.9043 14.1165 14.0554H14.1162Z" fill="#CCE0EC" stroke="white"/>
-                                            <path d="M7.0098 15.76C6.16358 15.76 5.33289 15.6722 4.52765 15.4966C2.37207 15.0268 1.16173 14.1046 1.11144 14.0655L1 13.9793L1.09964 13.8797C2.05916 12.9205 3.29869 12.3239 4.78375 12.106C5.9646 11.9329 7.30221 11.9984 8.75903 12.3006C11.2325 12.8132 13.226 13.8471 13.2459 13.8573L13.1599 14.0215C13.2723 13.9681 13.3856 13.9129 13.4992 13.8561L13.6103 14.0782C11.8838 14.9412 10.1535 15.4783 8.46754 15.6744C7.9777 15.7315 7.49095 15.76 7.00949 15.76H7.0098ZM1.38089 13.9523C1.7326 14.1903 2.8613 14.8816 4.59408 15.257C6.46656 15.6629 9.43513 15.769 13.0885 14.0556C12.788 13.9045 10.9453 13.0062 8.70347 12.5426C6.50536 12.0877 3.46818 11.9707 1.38089 13.9523Z" fill="#CCE0EC" stroke="white"/>
-                                        </svg>
-                                    </span>
-                                </p>
-                                <div class="work__item-block">
-                                    <h3 class="work__item-title">Save</h3>
-                                    <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
-                                </div>   
+                            <div class="work__item">
+                                <div class="work__item-top">
+                                    <p class="work__item-step">
+                                        Step 3
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+                                                <path d="M25.7119 15.3138C25.1456 15.8801 24.3203 16.3449 23.2815 16.6773C21.7403 17.1705 19.8427 17.3447 17.6396 17.1961C17.7884 19.3994 17.6139 21.2968 17.1207 22.838C16.6758 24.2289 15.9934 25.2372 15.1473 25.7534C14.3511 26.2396 13.4741 26.2395 12.6778 25.7539C11.8322 25.2379 11.15 24.2301 10.7056 22.8394C10.2133 21.2982 10.0397 19.4009 10.1892 17.1977C7.98583 17.3474 6.08847 17.1738 4.54751 16.6813C3.15677 16.2369 2.14883 15.5549 1.63297 14.7091C1.14715 13.913 1.14754 13.036 1.6335 12.2396C2.14992 11.3937 3.15795 10.7111 4.54887 10.2661C6.09025 9.77316 7.98768 9.59873 10.1908 9.74728C10.042 7.54401 10.2164 5.64657 10.7096 4.1054C11.1546 2.71448 11.837 1.70625 12.683 1.19002C13.4793 0.70386 14.3563 0.703875 15.1525 1.1895C15.9982 1.70556 16.6804 2.7133 17.1247 4.10404C17.6173 5.645 17.7907 7.54256 17.6412 9.74569C19.8445 9.596 21.7419 9.76963 23.2828 10.2622C24.6736 10.7065 25.6815 11.3885 26.1974 12.2343C26.6832 13.0304 26.6828 13.9074 26.1969 14.7038C26.0661 14.918 25.904 15.1217 25.7119 15.3138ZM17.3932 16.9498L17.5249 16.9592C22.4858 17.3209 25.1568 15.9701 26.0021 14.5849C26.4414 13.8653 26.4416 13.0728 26.0026 12.3534C25.1577 10.9688 22.4874 9.61883 17.5264 9.98267L17.3947 9.99218L17.4042 9.86049C17.7681 4.89944 16.4183 2.22897 15.0335 1.38432C14.3141 0.945266 13.5216 0.945437 12.802 1.3848C11.417 2.23024 10.066 4.90108 10.4277 9.86197L10.4371 9.99366L10.3054 9.9842C5.34455 9.62248 2.67371 10.9735 1.82827 12.3585C1.38891 13.0781 1.38874 13.8706 1.8278 14.59C2.67265 15.9747 5.34291 17.3246 10.304 16.9607L10.4356 16.9512L10.4261 17.0829C10.0623 22.044 11.412 24.7144 12.7968 25.5591C13.5163 25.9981 14.3088 25.998 15.0284 25.5586C16.4133 24.7132 17.7644 22.0423 17.4027 17.0814L17.3932 16.9498Z" fill="#CCE0EC" stroke="white"/>
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>   
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
+                                </div>
                             </div>
-                            <div class="work__item-bottom">
-                                <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
+                            <div class="work__item">
+                                <div class="work__item-top">
+                                    <p class="work__item-step">
+                                        Step 4
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="27" viewBox="0 0 29 27" fill="none">
+                                                <path d="M12.2491 26.4746C12.2324 26.4746 12.2157 26.4733 12.1989 26.4707C11.781 26.4031 11.7001 25.5891 11.6032 24.2662C11.5684 23.7921 11.5326 23.3019 11.4694 22.9325C11.3807 22.4108 11.2739 22.3498 11.2535 22.3429C11.232 22.3357 11.1033 22.318 10.686 22.6802C10.3919 22.9358 10.0419 23.3023 9.70304 23.6566C8.90258 24.4946 8.35802 25.0425 7.99157 25.0428C7.93732 25.0428 7.88682 25.0307 7.84008 25.0057C7.47226 24.8095 7.67869 24.0201 8.04548 22.7488C8.17821 22.2891 8.31537 21.8134 8.38497 21.4429C8.48324 20.9186 8.40238 20.8255 8.38497 20.8123C8.36757 20.7986 8.25361 20.7415 7.73737 20.9462C7.37297 21.0909 6.91644 21.3219 6.47527 21.545C5.26707 22.1559 4.51267 22.5152 4.238 22.2136C3.96231 21.9111 4.43386 21.2392 5.22579 20.1676C5.51411 19.7775 5.81232 19.3743 6.00953 19.0469C6.28897 18.5833 6.24529 18.4674 6.23369 18.4491C6.22209 18.4307 6.1368 18.3405 5.58303 18.3615C5.19167 18.3762 4.68294 18.4405 4.19126 18.5032C2.83055 18.6758 1.98881 18.7624 1.83936 18.3841C1.6923 18.0114 2.3747 17.5448 3.50067 16.8145C3.91523 16.5455 4.34412 16.2672 4.65086 16.0254C5.08624 15.6822 5.0876 15.5563 5.0835 15.5346C5.07975 15.5143 5.03403 15.404 4.51506 15.237C4.14759 15.1189 3.65216 15.0067 3.17311 14.8981C1.82571 14.593 1 14.3853 1 13.9745C1 13.5637 1.82571 13.356 3.17311 13.0512C3.65216 12.9426 4.14759 12.8308 4.51506 12.7123C5.03403 12.5453 5.07975 12.4354 5.0835 12.4147C5.0876 12.3931 5.08624 12.2671 4.65086 11.9239C4.34412 11.6821 3.91523 11.4039 3.50067 11.1348C2.3747 10.4042 1.6923 9.93762 1.83936 9.56524C1.98881 9.18661 2.83055 9.27323 4.19126 9.44613C4.68294 9.50847 5.19167 9.57311 5.58303 9.58787C6.13714 9.60821 6.22243 9.51864 6.23369 9.50026C6.24529 9.48189 6.28897 9.36607 6.00953 8.90248C5.81232 8.57504 5.51411 8.17181 5.22579 7.78171C4.43386 6.71047 3.96231 6.03853 4.238 5.7357C4.51267 5.43418 5.26707 5.79312 6.47493 6.40436C6.9161 6.62747 7.37263 6.85845 7.73703 7.00314C8.25361 7.2082 8.36723 7.15078 8.38463 7.137C8.40169 7.12355 8.48256 7.03069 8.38463 6.5064C8.31503 6.13565 8.17787 5.66024 8.04514 5.20058C7.67801 3.92921 7.47192 3.13981 7.83973 2.94361C8.20141 2.75069 8.7835 3.33043 9.7027 4.29274C10.0412 4.64741 10.3916 5.01389 10.6857 5.26948C11.1026 5.63169 11.2316 5.61398 11.2531 5.60676C11.2736 5.59987 11.3804 5.53917 11.4691 5.01717C11.5319 4.64774 11.5681 4.15757 11.6029 3.68347C11.6998 2.36059 11.7803 1.54658 12.1986 1.47899C12.6015 1.41304 12.9492 2.14175 13.4808 3.3347C13.6791 3.77993 13.8841 4.23992 14.0752 4.57753C14.3468 5.05688 14.4768 5.08115 14.5 5.08115C14.5232 5.08115 14.6532 5.05688 14.9248 4.57753C15.1159 4.24025 15.3209 3.77993 15.5192 3.3347C16.0508 2.14142 16.3978 1.41337 16.8014 1.47866C17.2194 1.54625 17.3002 2.36026 17.3971 3.68314C17.432 4.15724 17.4678 4.64741 17.5309 5.01685C17.62 5.53852 17.7264 5.59954 17.7469 5.60643C17.7684 5.61365 17.8973 5.63137 18.3143 5.26915C18.6084 5.01356 18.9585 4.64708 19.2973 4.29274C20.2165 3.33043 20.7983 2.75036 21.1603 2.94361C21.5281 3.13981 21.3217 3.92921 20.9549 5.20058C20.8221 5.66024 20.685 6.13598 20.6154 6.5064C20.5171 7.03069 20.598 7.12388 20.6154 7.137C20.6328 7.15078 20.7467 7.20787 21.263 7.00314C21.6274 6.85845 22.0839 6.62747 22.5251 6.40436C23.7329 5.79312 24.4873 5.43418 24.762 5.7357C25.0377 6.0382 24.5661 6.71015 23.7742 7.78171C23.4859 8.17181 23.1877 8.57504 22.9905 8.90248C22.711 9.36607 22.7547 9.48189 22.7663 9.50026C22.7779 9.51864 22.8629 9.60854 23.417 9.58787C23.8083 9.57311 24.3171 9.5088 24.8087 9.44613C26.1695 9.27355 27.0112 9.18661 27.1606 9.56524C27.3077 9.93795 26.6253 10.4045 25.4993 11.1348C25.0844 11.4039 24.6559 11.6821 24.3491 11.9239C23.9138 12.2671 23.9124 12.3931 23.9165 12.4147C23.9202 12.4351 23.966 12.5453 24.4849 12.7123C24.8524 12.8304 25.3478 12.9426 25.8269 13.0512C27.1743 13.3564 28 13.5641 28 13.9745C28 14.385 27.1743 14.593 25.8269 14.8981C25.3478 15.0064 24.8528 15.1186 24.4849 15.2367C23.966 15.4037 23.9202 15.5136 23.9165 15.5343C23.9124 15.5559 23.9138 15.6819 24.3491 16.0251C24.6559 16.2669 25.0848 16.5451 25.4993 16.8142C26.6253 17.5448 27.3077 18.0114 27.1606 18.3838C27.0112 18.7624 26.1695 18.6758 24.8087 18.5029C24.3171 18.4405 23.8083 18.3759 23.417 18.3611C22.8629 18.3401 22.7776 18.4304 22.7663 18.4487C22.7547 18.4671 22.711 18.5829 22.9905 19.0465C23.1877 19.374 23.4859 19.7772 23.7742 20.1673C24.5661 21.2385 25.0377 21.9105 24.762 22.2133C24.4873 22.5152 23.7329 22.1559 22.5247 21.5446C22.0836 21.3215 21.627 21.0906 21.2626 20.9459C20.746 20.7408 20.6324 20.7982 20.615 20.812C20.598 20.8255 20.5171 20.9183 20.615 21.4426C20.6846 21.8134 20.8218 22.2888 20.9545 22.7484C21.3217 24.0198 21.5277 24.8092 21.1599 25.0054C20.7979 25.1986 20.2162 24.6186 19.297 23.6563C18.9585 23.3019 18.6081 22.9351 18.314 22.6799C17.897 22.3176 17.768 22.3354 17.7465 22.3426C17.7261 22.3495 17.6193 22.4102 17.5306 22.9322C17.4678 23.3016 17.4316 23.7918 17.3968 24.2659C17.2999 25.5887 17.2194 26.4028 16.8011 26.4703C16.7844 26.473 16.7676 26.4743 16.7509 26.4743C16.3677 26.4743 16.0282 25.758 15.5188 24.6143C15.3206 24.1691 15.1155 23.7091 14.9245 23.3715C14.6532 22.8921 14.5232 22.8679 14.4997 22.8679C14.4761 22.8679 14.3465 22.8921 14.0749 23.3715C13.8838 23.7088 13.6787 24.1691 13.4805 24.6143C12.9711 25.758 12.6316 26.4743 12.2484 26.4743L12.2491 26.4746ZM14.5003 22.606C14.9013 22.606 15.2442 23.3301 15.7703 24.5113C15.9699 24.9591 16.1763 25.4221 16.3654 25.7525C16.6359 26.2249 16.7516 26.2121 16.7564 26.2115C16.7693 26.2095 16.886 26.1754 16.9826 25.6357C17.0512 25.2544 17.0887 24.7426 17.1249 24.2475C17.217 22.9929 17.2917 22.2176 17.6568 22.0949C18.0311 21.9692 18.6002 22.5391 19.4983 23.4791C19.8429 23.84 20.1994 24.213 20.4942 24.466C20.9166 24.8286 21.0234 24.7784 21.0279 24.7761C21.0391 24.7702 21.1354 24.7019 21.0391 24.1665C20.9712 23.7875 20.829 23.295 20.6918 22.819C20.3404 21.6011 20.1404 20.8428 20.4437 20.6076C20.7501 20.3704 21.4824 20.7208 22.652 21.3124C23.1048 21.5414 23.5729 21.7783 23.9411 21.9216C24.4692 22.1273 24.5532 22.044 24.5566 22.0404C24.56 22.0368 24.6351 21.9452 24.3522 21.4685C24.155 21.1362 23.8483 20.7211 23.5517 20.3195C22.7878 19.286 22.3299 18.6361 22.5322 18.3132C22.7335 17.9924 23.5419 18.0773 24.8442 18.2427C25.3536 18.3073 25.8808 18.3743 26.2803 18.3861C26.8539 18.4028 26.9034 18.2952 26.9054 18.2906C26.9071 18.2863 26.9433 18.1781 26.5089 17.8313C26.2053 17.5888 25.7689 17.3057 25.3468 17.0317C24.2471 16.3181 23.5767 15.8617 23.648 15.487C23.7169 15.1235 24.4972 14.9293 25.7641 14.6425C26.2681 14.5283 26.7891 14.4105 27.1709 14.2839C27.7113 14.1048 27.7267 13.9873 27.7267 13.9745C27.7267 13.9617 27.711 13.8446 27.1709 13.6654C26.7891 13.5388 26.2681 13.4207 25.7641 13.3068C24.4969 13.0201 23.7169 12.8258 23.648 12.4623C23.5767 12.0873 24.2471 11.6313 25.3468 10.9176C25.7689 10.6437 26.2053 10.3605 26.5089 10.1181C26.9433 9.77127 26.9071 9.663 26.9054 9.65874C26.9037 9.65414 26.8539 9.5462 26.2803 9.56326C25.8808 9.57508 25.354 9.642 24.8442 9.70664C23.5419 9.872 22.7335 9.95698 22.5322 9.6361C22.3296 9.31326 22.7878 8.66329 23.5517 7.62979C23.8486 7.22853 24.1553 6.8135 24.3522 6.48081C24.6351 6.00409 24.5597 5.91254 24.5566 5.90893C24.5532 5.90533 24.4692 5.82199 23.9411 6.02771C23.5729 6.17109 23.1048 6.40797 22.652 6.63698C21.4827 7.22854 20.7501 7.57927 20.4437 7.34206C20.1401 7.10682 20.3404 6.34858 20.6918 5.13069C20.8293 4.65463 20.9712 4.16215 21.0391 3.7832C21.135 3.24775 21.0391 3.17951 21.0279 3.17361C21.0234 3.17131 20.9166 3.12111 20.4942 3.48366C20.1994 3.73662 19.8429 4.10999 19.4983 4.47057C18.6831 5.32395 18.1389 5.87186 17.7656 5.87219C17.7278 5.87219 17.6916 5.86661 17.6568 5.8548C17.2917 5.73209 17.2167 4.95713 17.1249 3.70249C17.0887 3.2074 17.0512 2.69557 16.9826 2.314C16.8857 1.77428 16.7693 1.74049 16.7564 1.73819C16.7516 1.73786 16.6359 1.72507 16.3654 2.1972C16.176 2.52759 15.9699 2.99085 15.7703 3.43838C15.2438 4.61952 14.9009 5.34363 14.5003 5.34363C14.0998 5.34363 13.7565 4.61952 13.23 3.43838C13.0304 2.99053 12.8244 2.52759 12.635 2.1972C12.3644 1.72474 12.2494 1.73786 12.244 1.73819C12.231 1.74016 12.1143 1.77428 12.0178 2.314C11.9492 2.69525 11.912 3.2074 11.8755 3.70249C11.7833 4.95713 11.7086 5.73242 11.3435 5.8548C10.9696 5.98046 10.4001 5.41056 9.50207 4.47057C9.15746 4.10967 8.8009 3.73662 8.5061 3.48366C8.08369 3.12111 7.9769 3.17131 7.97247 3.17361C7.96121 3.17951 7.86498 3.24775 7.96086 3.7832C8.02876 4.16215 8.17104 4.65463 8.3082 5.13069C8.65964 6.34858 8.85959 7.10682 8.55626 7.34206C8.2502 7.57927 7.51764 7.22886 6.348 6.6373C5.89523 6.40829 5.42709 6.17142 5.05894 6.02804C4.53076 5.82232 4.44682 5.90565 4.44341 5.90926C4.44 5.91287 4.36493 6.00442 4.64779 6.48114C4.845 6.8135 5.15174 7.22853 5.44825 7.63012C6.2122 8.66362 6.6701 9.31358 6.46776 9.63643C6.26645 9.95731 5.45815 9.87233 4.15578 9.70697C3.64636 9.64233 3.1192 9.5754 2.71965 9.56359C2.14609 9.5462 2.09663 9.65447 2.09492 9.65907C2.09321 9.66333 2.05704 9.7716 2.49139 10.1184C2.79506 10.3609 3.23146 10.644 3.65353 10.918C4.75322 11.6316 5.42369 12.088 5.35237 12.4626C5.28345 12.8262 4.50312 13.0204 3.23624 13.3072C2.73228 13.4213 2.21127 13.5391 1.82946 13.6658C1.289 13.8449 1.27364 13.9624 1.27364 13.9748C1.27364 13.9873 1.28934 14.1048 1.82946 14.2842C2.21127 14.4109 2.73228 14.529 3.23624 14.6428C4.50346 14.9296 5.28345 15.1238 5.35237 15.4874C5.42369 15.8624 4.75322 16.3184 3.65353 17.032C3.23146 17.306 2.79506 17.5891 2.49139 17.8316C2.05704 18.1784 2.09321 18.2867 2.09492 18.2909C2.09663 18.2955 2.14609 18.4038 2.72 18.3864C3.11954 18.3746 3.64636 18.3077 4.15612 18.243C5.45849 18.0777 6.26679 17.9927 6.4681 18.3136C6.67078 18.6364 6.21254 19.2864 5.44859 20.3199C5.15174 20.7211 4.845 21.1362 4.64813 21.4689C4.36527 21.9456 4.44068 22.0371 4.44375 22.0407C4.44716 22.0443 4.5311 22.1277 5.05928 21.922C5.42744 21.7786 5.89557 21.5417 6.34834 21.3127C7.51764 20.7211 8.2502 20.3707 8.5566 20.6079C8.86027 20.8432 8.65998 21.6014 8.30855 22.8193C8.17104 23.2954 8.0291 23.7878 7.9612 24.1668C7.86533 24.7022 7.96121 24.7705 7.97247 24.7764C7.9769 24.7787 8.08369 24.8289 8.5061 24.4663C8.8009 24.2134 9.15746 23.84 9.50207 23.4794C10.4001 22.5394 10.9692 21.9695 11.3435 22.0952C11.7086 22.2179 11.7837 22.9929 11.8755 24.2475C11.9116 24.7426 11.9492 25.2544 12.0178 25.636C12.1147 26.1757 12.231 26.2095 12.244 26.2118C12.2487 26.2125 12.3644 26.2249 12.635 25.7528C12.8244 25.4224 13.0304 24.9591 13.23 24.5116C13.7565 23.3301 14.0994 22.6064 14.5003 22.6064V22.606Z" fill="#CCE0EC" stroke="white"/>
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>   
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <p class="work__item-step">
-                                    Step 3
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
-                                            <path d="M25.7119 15.3138C25.1456 15.8801 24.3203 16.3449 23.2815 16.6773C21.7403 17.1705 19.8427 17.3447 17.6396 17.1961C17.7884 19.3994 17.6139 21.2968 17.1207 22.838C16.6758 24.2289 15.9934 25.2372 15.1473 25.7534C14.3511 26.2396 13.4741 26.2395 12.6778 25.7539C11.8322 25.2379 11.15 24.2301 10.7056 22.8394C10.2133 21.2982 10.0397 19.4009 10.1892 17.1977C7.98583 17.3474 6.08847 17.1738 4.54751 16.6813C3.15677 16.2369 2.14883 15.5549 1.63297 14.7091C1.14715 13.913 1.14754 13.036 1.6335 12.2396C2.14992 11.3937 3.15795 10.7111 4.54887 10.2661C6.09025 9.77316 7.98768 9.59873 10.1908 9.74728C10.042 7.54401 10.2164 5.64657 10.7096 4.1054C11.1546 2.71448 11.837 1.70625 12.683 1.19002C13.4793 0.70386 14.3563 0.703875 15.1525 1.1895C15.9982 1.70556 16.6804 2.7133 17.1247 4.10404C17.6173 5.645 17.7907 7.54256 17.6412 9.74569C19.8445 9.596 21.7419 9.76963 23.2828 10.2622C24.6736 10.7065 25.6815 11.3885 26.1974 12.2343C26.6832 13.0304 26.6828 13.9074 26.1969 14.7038C26.0661 14.918 25.904 15.1217 25.7119 15.3138ZM17.3932 16.9498L17.5249 16.9592C22.4858 17.3209 25.1568 15.9701 26.0021 14.5849C26.4414 13.8653 26.4416 13.0728 26.0026 12.3534C25.1577 10.9688 22.4874 9.61883 17.5264 9.98267L17.3947 9.99218L17.4042 9.86049C17.7681 4.89944 16.4183 2.22897 15.0335 1.38432C14.3141 0.945266 13.5216 0.945437 12.802 1.3848C11.417 2.23024 10.066 4.90108 10.4277 9.86197L10.4371 9.99366L10.3054 9.9842C5.34455 9.62248 2.67371 10.9735 1.82827 12.3585C1.38891 13.0781 1.38874 13.8706 1.8278 14.59C2.67265 15.9747 5.34291 17.3246 10.304 16.9607L10.4356 16.9512L10.4261 17.0829C10.0623 22.044 11.412 24.7144 12.7968 25.5591C13.5163 25.9981 14.3088 25.998 15.0284 25.5586C16.4133 24.7132 17.7644 22.0423 17.4027 17.0814L17.3932 16.9498Z" fill="#CCE0EC" stroke="white"/>
-                                        </svg>
-                                    </span>
-                                </p>
-                                <div class="work__item-block">
-                                    <h3 class="work__item-title">Save</h3>
-                                    <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
-                                </div>   
-                            </div>
-                            <div class="work__item-bottom">
-                                <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
-                            </div>
-                        </div>
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <p class="work__item-step">
-                                    Step 4
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="27" viewBox="0 0 29 27" fill="none">
-                                            <path d="M12.2491 26.4746C12.2324 26.4746 12.2157 26.4733 12.1989 26.4707C11.781 26.4031 11.7001 25.5891 11.6032 24.2662C11.5684 23.7921 11.5326 23.3019 11.4694 22.9325C11.3807 22.4108 11.2739 22.3498 11.2535 22.3429C11.232 22.3357 11.1033 22.318 10.686 22.6802C10.3919 22.9358 10.0419 23.3023 9.70304 23.6566C8.90258 24.4946 8.35802 25.0425 7.99157 25.0428C7.93732 25.0428 7.88682 25.0307 7.84008 25.0057C7.47226 24.8095 7.67869 24.0201 8.04548 22.7488C8.17821 22.2891 8.31537 21.8134 8.38497 21.4429C8.48324 20.9186 8.40238 20.8255 8.38497 20.8123C8.36757 20.7986 8.25361 20.7415 7.73737 20.9462C7.37297 21.0909 6.91644 21.3219 6.47527 21.545C5.26707 22.1559 4.51267 22.5152 4.238 22.2136C3.96231 21.9111 4.43386 21.2392 5.22579 20.1676C5.51411 19.7775 5.81232 19.3743 6.00953 19.0469C6.28897 18.5833 6.24529 18.4674 6.23369 18.4491C6.22209 18.4307 6.1368 18.3405 5.58303 18.3615C5.19167 18.3762 4.68294 18.4405 4.19126 18.5032C2.83055 18.6758 1.98881 18.7624 1.83936 18.3841C1.6923 18.0114 2.3747 17.5448 3.50067 16.8145C3.91523 16.5455 4.34412 16.2672 4.65086 16.0254C5.08624 15.6822 5.0876 15.5563 5.0835 15.5346C5.07975 15.5143 5.03403 15.404 4.51506 15.237C4.14759 15.1189 3.65216 15.0067 3.17311 14.8981C1.82571 14.593 1 14.3853 1 13.9745C1 13.5637 1.82571 13.356 3.17311 13.0512C3.65216 12.9426 4.14759 12.8308 4.51506 12.7123C5.03403 12.5453 5.07975 12.4354 5.0835 12.4147C5.0876 12.3931 5.08624 12.2671 4.65086 11.9239C4.34412 11.6821 3.91523 11.4039 3.50067 11.1348C2.3747 10.4042 1.6923 9.93762 1.83936 9.56524C1.98881 9.18661 2.83055 9.27323 4.19126 9.44613C4.68294 9.50847 5.19167 9.57311 5.58303 9.58787C6.13714 9.60821 6.22243 9.51864 6.23369 9.50026C6.24529 9.48189 6.28897 9.36607 6.00953 8.90248C5.81232 8.57504 5.51411 8.17181 5.22579 7.78171C4.43386 6.71047 3.96231 6.03853 4.238 5.7357C4.51267 5.43418 5.26707 5.79312 6.47493 6.40436C6.9161 6.62747 7.37263 6.85845 7.73703 7.00314C8.25361 7.2082 8.36723 7.15078 8.38463 7.137C8.40169 7.12355 8.48256 7.03069 8.38463 6.5064C8.31503 6.13565 8.17787 5.66024 8.04514 5.20058C7.67801 3.92921 7.47192 3.13981 7.83973 2.94361C8.20141 2.75069 8.7835 3.33043 9.7027 4.29274C10.0412 4.64741 10.3916 5.01389 10.6857 5.26948C11.1026 5.63169 11.2316 5.61398 11.2531 5.60676C11.2736 5.59987 11.3804 5.53917 11.4691 5.01717C11.5319 4.64774 11.5681 4.15757 11.6029 3.68347C11.6998 2.36059 11.7803 1.54658 12.1986 1.47899C12.6015 1.41304 12.9492 2.14175 13.4808 3.3347C13.6791 3.77993 13.8841 4.23992 14.0752 4.57753C14.3468 5.05688 14.4768 5.08115 14.5 5.08115C14.5232 5.08115 14.6532 5.05688 14.9248 4.57753C15.1159 4.24025 15.3209 3.77993 15.5192 3.3347C16.0508 2.14142 16.3978 1.41337 16.8014 1.47866C17.2194 1.54625 17.3002 2.36026 17.3971 3.68314C17.432 4.15724 17.4678 4.64741 17.5309 5.01685C17.62 5.53852 17.7264 5.59954 17.7469 5.60643C17.7684 5.61365 17.8973 5.63137 18.3143 5.26915C18.6084 5.01356 18.9585 4.64708 19.2973 4.29274C20.2165 3.33043 20.7983 2.75036 21.1603 2.94361C21.5281 3.13981 21.3217 3.92921 20.9549 5.20058C20.8221 5.66024 20.685 6.13598 20.6154 6.5064C20.5171 7.03069 20.598 7.12388 20.6154 7.137C20.6328 7.15078 20.7467 7.20787 21.263 7.00314C21.6274 6.85845 22.0839 6.62747 22.5251 6.40436C23.7329 5.79312 24.4873 5.43418 24.762 5.7357C25.0377 6.0382 24.5661 6.71015 23.7742 7.78171C23.4859 8.17181 23.1877 8.57504 22.9905 8.90248C22.711 9.36607 22.7547 9.48189 22.7663 9.50026C22.7779 9.51864 22.8629 9.60854 23.417 9.58787C23.8083 9.57311 24.3171 9.5088 24.8087 9.44613C26.1695 9.27355 27.0112 9.18661 27.1606 9.56524C27.3077 9.93795 26.6253 10.4045 25.4993 11.1348C25.0844 11.4039 24.6559 11.6821 24.3491 11.9239C23.9138 12.2671 23.9124 12.3931 23.9165 12.4147C23.9202 12.4351 23.966 12.5453 24.4849 12.7123C24.8524 12.8304 25.3478 12.9426 25.8269 13.0512C27.1743 13.3564 28 13.5641 28 13.9745C28 14.385 27.1743 14.593 25.8269 14.8981C25.3478 15.0064 24.8528 15.1186 24.4849 15.2367C23.966 15.4037 23.9202 15.5136 23.9165 15.5343C23.9124 15.5559 23.9138 15.6819 24.3491 16.0251C24.6559 16.2669 25.0848 16.5451 25.4993 16.8142C26.6253 17.5448 27.3077 18.0114 27.1606 18.3838C27.0112 18.7624 26.1695 18.6758 24.8087 18.5029C24.3171 18.4405 23.8083 18.3759 23.417 18.3611C22.8629 18.3401 22.7776 18.4304 22.7663 18.4487C22.7547 18.4671 22.711 18.5829 22.9905 19.0465C23.1877 19.374 23.4859 19.7772 23.7742 20.1673C24.5661 21.2385 25.0377 21.9105 24.762 22.2133C24.4873 22.5152 23.7329 22.1559 22.5247 21.5446C22.0836 21.3215 21.627 21.0906 21.2626 20.9459C20.746 20.7408 20.6324 20.7982 20.615 20.812C20.598 20.8255 20.5171 20.9183 20.615 21.4426C20.6846 21.8134 20.8218 22.2888 20.9545 22.7484C21.3217 24.0198 21.5277 24.8092 21.1599 25.0054C20.7979 25.1986 20.2162 24.6186 19.297 23.6563C18.9585 23.3019 18.6081 22.9351 18.314 22.6799C17.897 22.3176 17.768 22.3354 17.7465 22.3426C17.7261 22.3495 17.6193 22.4102 17.5306 22.9322C17.4678 23.3016 17.4316 23.7918 17.3968 24.2659C17.2999 25.5887 17.2194 26.4028 16.8011 26.4703C16.7844 26.473 16.7676 26.4743 16.7509 26.4743C16.3677 26.4743 16.0282 25.758 15.5188 24.6143C15.3206 24.1691 15.1155 23.7091 14.9245 23.3715C14.6532 22.8921 14.5232 22.8679 14.4997 22.8679C14.4761 22.8679 14.3465 22.8921 14.0749 23.3715C13.8838 23.7088 13.6787 24.1691 13.4805 24.6143C12.9711 25.758 12.6316 26.4743 12.2484 26.4743L12.2491 26.4746ZM14.5003 22.606C14.9013 22.606 15.2442 23.3301 15.7703 24.5113C15.9699 24.9591 16.1763 25.4221 16.3654 25.7525C16.6359 26.2249 16.7516 26.2121 16.7564 26.2115C16.7693 26.2095 16.886 26.1754 16.9826 25.6357C17.0512 25.2544 17.0887 24.7426 17.1249 24.2475C17.217 22.9929 17.2917 22.2176 17.6568 22.0949C18.0311 21.9692 18.6002 22.5391 19.4983 23.4791C19.8429 23.84 20.1994 24.213 20.4942 24.466C20.9166 24.8286 21.0234 24.7784 21.0279 24.7761C21.0391 24.7702 21.1354 24.7019 21.0391 24.1665C20.9712 23.7875 20.829 23.295 20.6918 22.819C20.3404 21.6011 20.1404 20.8428 20.4437 20.6076C20.7501 20.3704 21.4824 20.7208 22.652 21.3124C23.1048 21.5414 23.5729 21.7783 23.9411 21.9216C24.4692 22.1273 24.5532 22.044 24.5566 22.0404C24.56 22.0368 24.6351 21.9452 24.3522 21.4685C24.155 21.1362 23.8483 20.7211 23.5517 20.3195C22.7878 19.286 22.3299 18.6361 22.5322 18.3132C22.7335 17.9924 23.5419 18.0773 24.8442 18.2427C25.3536 18.3073 25.8808 18.3743 26.2803 18.3861C26.8539 18.4028 26.9034 18.2952 26.9054 18.2906C26.9071 18.2863 26.9433 18.1781 26.5089 17.8313C26.2053 17.5888 25.7689 17.3057 25.3468 17.0317C24.2471 16.3181 23.5767 15.8617 23.648 15.487C23.7169 15.1235 24.4972 14.9293 25.7641 14.6425C26.2681 14.5283 26.7891 14.4105 27.1709 14.2839C27.7113 14.1048 27.7267 13.9873 27.7267 13.9745C27.7267 13.9617 27.711 13.8446 27.1709 13.6654C26.7891 13.5388 26.2681 13.4207 25.7641 13.3068C24.4969 13.0201 23.7169 12.8258 23.648 12.4623C23.5767 12.0873 24.2471 11.6313 25.3468 10.9176C25.7689 10.6437 26.2053 10.3605 26.5089 10.1181C26.9433 9.77127 26.9071 9.663 26.9054 9.65874C26.9037 9.65414 26.8539 9.5462 26.2803 9.56326C25.8808 9.57508 25.354 9.642 24.8442 9.70664C23.5419 9.872 22.7335 9.95698 22.5322 9.6361C22.3296 9.31326 22.7878 8.66329 23.5517 7.62979C23.8486 7.22853 24.1553 6.8135 24.3522 6.48081C24.6351 6.00409 24.5597 5.91254 24.5566 5.90893C24.5532 5.90533 24.4692 5.82199 23.9411 6.02771C23.5729 6.17109 23.1048 6.40797 22.652 6.63698C21.4827 7.22854 20.7501 7.57927 20.4437 7.34206C20.1401 7.10682 20.3404 6.34858 20.6918 5.13069C20.8293 4.65463 20.9712 4.16215 21.0391 3.7832C21.135 3.24775 21.0391 3.17951 21.0279 3.17361C21.0234 3.17131 20.9166 3.12111 20.4942 3.48366C20.1994 3.73662 19.8429 4.10999 19.4983 4.47057C18.6831 5.32395 18.1389 5.87186 17.7656 5.87219C17.7278 5.87219 17.6916 5.86661 17.6568 5.8548C17.2917 5.73209 17.2167 4.95713 17.1249 3.70249C17.0887 3.2074 17.0512 2.69557 16.9826 2.314C16.8857 1.77428 16.7693 1.74049 16.7564 1.73819C16.7516 1.73786 16.6359 1.72507 16.3654 2.1972C16.176 2.52759 15.9699 2.99085 15.7703 3.43838C15.2438 4.61952 14.9009 5.34363 14.5003 5.34363C14.0998 5.34363 13.7565 4.61952 13.23 3.43838C13.0304 2.99053 12.8244 2.52759 12.635 2.1972C12.3644 1.72474 12.2494 1.73786 12.244 1.73819C12.231 1.74016 12.1143 1.77428 12.0178 2.314C11.9492 2.69525 11.912 3.2074 11.8755 3.70249C11.7833 4.95713 11.7086 5.73242 11.3435 5.8548C10.9696 5.98046 10.4001 5.41056 9.50207 4.47057C9.15746 4.10967 8.8009 3.73662 8.5061 3.48366C8.08369 3.12111 7.9769 3.17131 7.97247 3.17361C7.96121 3.17951 7.86498 3.24775 7.96086 3.7832C8.02876 4.16215 8.17104 4.65463 8.3082 5.13069C8.65964 6.34858 8.85959 7.10682 8.55626 7.34206C8.2502 7.57927 7.51764 7.22886 6.348 6.6373C5.89523 6.40829 5.42709 6.17142 5.05894 6.02804C4.53076 5.82232 4.44682 5.90565 4.44341 5.90926C4.44 5.91287 4.36493 6.00442 4.64779 6.48114C4.845 6.8135 5.15174 7.22853 5.44825 7.63012C6.2122 8.66362 6.6701 9.31358 6.46776 9.63643C6.26645 9.95731 5.45815 9.87233 4.15578 9.70697C3.64636 9.64233 3.1192 9.5754 2.71965 9.56359C2.14609 9.5462 2.09663 9.65447 2.09492 9.65907C2.09321 9.66333 2.05704 9.7716 2.49139 10.1184C2.79506 10.3609 3.23146 10.644 3.65353 10.918C4.75322 11.6316 5.42369 12.088 5.35237 12.4626C5.28345 12.8262 4.50312 13.0204 3.23624 13.3072C2.73228 13.4213 2.21127 13.5391 1.82946 13.6658C1.289 13.8449 1.27364 13.9624 1.27364 13.9748C1.27364 13.9873 1.28934 14.1048 1.82946 14.2842C2.21127 14.4109 2.73228 14.529 3.23624 14.6428C4.50346 14.9296 5.28345 15.1238 5.35237 15.4874C5.42369 15.8624 4.75322 16.3184 3.65353 17.032C3.23146 17.306 2.79506 17.5891 2.49139 17.8316C2.05704 18.1784 2.09321 18.2867 2.09492 18.2909C2.09663 18.2955 2.14609 18.4038 2.72 18.3864C3.11954 18.3746 3.64636 18.3077 4.15612 18.243C5.45849 18.0777 6.26679 17.9927 6.4681 18.3136C6.67078 18.6364 6.21254 19.2864 5.44859 20.3199C5.15174 20.7211 4.845 21.1362 4.64813 21.4689C4.36527 21.9456 4.44068 22.0371 4.44375 22.0407C4.44716 22.0443 4.5311 22.1277 5.05928 21.922C5.42744 21.7786 5.89557 21.5417 6.34834 21.3127C7.51764 20.7211 8.2502 20.3707 8.5566 20.6079C8.86027 20.8432 8.65998 21.6014 8.30855 22.8193C8.17104 23.2954 8.0291 23.7878 7.9612 24.1668C7.86533 24.7022 7.96121 24.7705 7.97247 24.7764C7.9769 24.7787 8.08369 24.8289 8.5061 24.4663C8.8009 24.2134 9.15746 23.84 9.50207 23.4794C10.4001 22.5394 10.9692 21.9695 11.3435 22.0952C11.7086 22.2179 11.7837 22.9929 11.8755 24.2475C11.9116 24.7426 11.9492 25.2544 12.0178 25.636C12.1147 26.1757 12.231 26.2095 12.244 26.2118C12.2487 26.2125 12.3644 26.2249 12.635 25.7528C12.8244 25.4224 13.0304 24.9591 13.23 24.5116C13.7565 23.3301 14.0994 22.6064 14.5003 22.6064V22.606Z" fill="#CCE0EC" stroke="white"/>
-                                        </svg>
-                                    </span>
-                                </p>
-                                <div class="work__item-block">
-                                    <h3 class="work__item-title">Save</h3>
-                                    <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
-                                </div>   
-                            </div>
-                            <div class="work__item-bottom">
-                                <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
-                            </div>
-                        </div>
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <p class="work__item-step">
-                                    Step 5
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-                                            <path d="M15.1667 26.1809L1.28688 19.0333L3.79263 3.6296L3.90511 3.61223L19.2211 1.25716L19.2723 1.35882L26.2505 15.1947L26.1697 15.2746L15.1666 26.1804L15.1667 26.1809ZM1.63258 18.859L15.1075 25.7981L25.868 15.1325L19.0437 1.60173L4.0651 3.90466L1.63224 18.8588L1.63258 18.859Z" fill="white" stroke="white"/>
-                                        </svg>
-                                    </span>
-                                </p>
-                                <div class="work__item-block">
-                                    <h3 class="work__item-title">Save</h3>
-                                    <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
-                                </div>                                
-                            </div>
-                            <div class="work__item-bottom">
-                                <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
+                            <div class="work__item">
+                                <div class="work__item-top">
+                                    <p class="work__item-step">
+                                        Step 5
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                                <path d="M15.1667 26.1809L1.28688 19.0333L3.79263 3.6296L3.90511 3.61223L19.2211 1.25716L19.2723 1.35882L26.2505 15.1947L26.1697 15.2746L15.1666 26.1804L15.1667 26.1809ZM1.63258 18.859L15.1075 25.7981L25.868 15.1325L19.0437 1.60173L4.0651 3.90466L1.63224 18.8588L1.63258 18.859Z" fill="white" stroke="white"/>
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <div class="work__item-block">
+                                        <h3 class="work__item-title">Save</h3>
+                                        <p class="work__item-name">Save & Optimize Your Legal Workflow</p>
+                                    </div>                                
+                                </div>
+                                <div class="work__item-bottom">
+                                    <p class="work__item-descr">Unique, thoughtfully designed interfaces to <br>reinforce your business authority.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -417,12 +420,12 @@
         <section class="pricing">
             <div class="container">
                 <div class="pricing__inner">
-                    <h2 class="pricing__title title">Pricing</h2>
-                    <p class="pricing__descr">Simple subscription plans designed for individuals, legal professionals, law firms, and corporate legal teams.</p>
+                    <h2 class="pricing__title title" data-aos="fade-right" data-aos-delay="0">Pricing</h2>
+                    <p class="pricing__descr" data-aos="fade-up" data-aos-delay="50">Simple subscription plans designed for individuals, legal professionals, law firms, and corporate legal teams.</p>
                     <div class="pricing__content">
-                        <p class="pricing__word">One credit = One word</p>
+                        <p class="pricing__word" data-aos="zoom-in" data-aos-delay="75">One credit = One word</p>
                         <div class="pricing__block">
-                            <div class="pricing__item">
+                            <div class="pricing__item" data-aos="fade-right" data-aos-delay="100">
                                 <p class="pricing__item-info">Pay-Per-Use Model</p>
                                 <p class="pricing__item-price"><span>€</span>2</p>
                                 <p class="pricing__item-count">1 00 credits</p>
@@ -439,7 +442,7 @@
                                 <a class="pricing__item-buy btn-2" href="#">Buy</a>
                                 <p class="pricing__item-ideal"><span>Ideal for:</span> work best for users needing continuous access.</p>
                             </div>
-                            <div class="pricing__item">
+                            <div class="pricing__item" data-aos="fade-left" data-aos-delay="150">
                                 <p class="pricing__item-info">Custom Pricing – Tailored for You</p>
                                 <p class="pricing__item-price pricing__item-individual">Individual <br>price</p>
                                 <p class="pricing__item-count">Tailored Credits</p>
@@ -465,13 +468,13 @@
         <section class="banner">
             <div class="container">
                 <div class="banner__inner">
-                    <h2 class="banner__title">No commitment, no subscriptionpay only for what you use!</h2>
-                    <div class="banner__icon">
+                    <h2 class="banner__title" data-aos="fade-right" data-aos-delay="0">No commitment, no subscriptionpay only for what you use!</h2>
+                    <div class="banner__icon" data-aos="fade-right" data-aos-delay="50">
                         <svg xmlns="http://www.w3.org/2000/svg" width="159" height="60" viewBox="0 0 159 60" fill="none">
                             <path d="M157.81 33.3213C159.382 31.7694 159.399 29.2368 157.847 27.6646L132.557 2.044C131.005 0.471794 128.472 0.455348 126.9 2.00727C125.328 3.55919 125.311 6.0918 126.863 7.664L149.343 30.4379L126.569 52.9179C124.997 54.4698 124.981 57.0024 126.533 58.5746C128.085 60.1468 130.617 60.1633 132.189 58.6113L157.81 33.3213ZM0.974027 33.4745L154.974 34.4745L155.026 26.4747L1.02597 25.4747L0.974027 33.4745Z" fill="white"/>
                         </svg>
                     </div>
-                    <a class="banner__btn btn-2" href="#">Live AI Chatbot</a>
+                    <a class="banner__btn btn-2" href="#" data-aos="fade-right" data-aos-delay="100">Live AI Chatbot</a>
                 </div>
             </div>
         </section>
@@ -480,10 +483,10 @@
             <div class="container">
                 <div class="why__inner">
                     <div class="why__top">
-                        <h2 class="why__title title">Why?</h2>
-                        <p class="why__count">( 07 )</p>
+                        <h2 class="why__title title" data-aos="fade-right" data-aos-delay="0">Why?</h2>
+                        <p class="why__count" data-aos="fade-left" data-aos-delay="50">( 07 )</p>
                     </div>                    
-                    <p class="why__descr">AI-powered legal automation cuts research and drafting time by 70%, eliminates errors, and ensures compliance. Scalable and adaptive for your specific legal needs.</p>
+                    <p class="why__descr" data-aos="fade-up" data-aos-delay="100">AI-powered legal automation cuts research and drafting time by 70%, eliminates errors, and ensures compliance. Scalable and adaptive for your specific legal needs.</p>
                 </div>
             </div>
         </section>
@@ -491,15 +494,15 @@
         <section class="review">
             <div class="container">
                 <div class="review__inner">
-                    <h2 class="review__title title">Review</h2>
-                    <p class="review__who">Who is it for?</p>
+                    <h2 class="review__title title" data-aos="fade-right" data-aos-delay="0">Review</h2>
+                    <p class="review__who" data-aos="fade-up" data-aos-delay="50">Who is it for?</p>
                     <div class="review__who-block">
-                        <p class="review__who-item">Freelancers & independent consultants</p>
-                        <p class="review__who-item">Law Firms <br>& SME</p>
-                        <p class="review__who-item">Startups & Academic istitutions </p>
+                        <p class="review__who-item" data-aos="zoom-in" data-aos-delay="100">Freelancers & independent consultants</p>
+                        <p class="review__who-item" data-aos="zoom-in" data-aos-delay="150">Law Firms <br>& SME</p>
+                        <p class="review__who-item" data-aos="zoom-in" data-aos-delay="200">Startups & Academic istitutions </p>
                     </div>
 
-                    <div class="review__block">
+                    <div class="review__block" data-aos="fade-up" data-aos-delay="100">
                         <div class="review__navigations">
                             <button class="review__next">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none">
@@ -739,7 +742,7 @@
             <p class="footer__bottom">If there is a problem or issue about our service, we are here to help. You can reach us and we will aim to get back to you as soon as possible <a href="mailto:info@morai.com">info@morai.com</a></p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
